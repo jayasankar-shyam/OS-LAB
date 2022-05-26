@@ -7,6 +7,7 @@ int main()
 {
 	int pid;
 	printf("The process id of the current process : %d\n",getpid());
+	printf("Calling the function fork()");
 	if(fork()!=0)
 	{
 		printf("Parent process starts and wait() executes\n");
