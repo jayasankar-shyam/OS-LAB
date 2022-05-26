@@ -17,5 +17,9 @@ case $choice in
 	  ;;
 	4)res=$((a/b))
 	  ;;
+	*)  
+	res="Invalid Operation"
+	echo "ERROR"
+	;;
 esac
 echo "Result : $res"
