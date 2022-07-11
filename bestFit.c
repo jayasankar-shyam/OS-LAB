@@ -27,6 +27,7 @@ void main()
 			if(bf[j]!=1)
 			{
 				temp=b[j]-f[i];
+				if(temp>=0)
 				if(lowest>temp)
 				{
 				ff[i]=j;
