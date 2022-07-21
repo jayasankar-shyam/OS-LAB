@@ -1,25 +1,46 @@
 #include <stdio.h>
+
 #include<stdlib.h>
+
 int main()
+
 {
+
     int queue[20], n, head, i, j, k, seek = 0, max, diff, temp, queue1[20],
     queue2[20], temp1 = 0, temp2 = 0;
-    printf("Enter the max range of disk\n");
+
+    printf("\nEnter the max range of disk: ");
+
     scanf("%d", &max);
-    printf("Enter the initial head position\n");
-    scanf("%d", &head);
-    printf("Enter the size of queue request\n");
+    printf("\nEnter the size of queue request: ");
+
     scanf("%d", &n);
-    printf("Enter the queue of disk positions to be read\n");
+
+    printf("\nEnter the initial head position: ");
+
+    scanf("%d", &head);
+
+
+
+    printf("\nEnter the queue of disk positions to be read: ");
+
     for (i = 1; i <= n; i++)
+
     {
+
         scanf("%d", &temp);
+
         if (temp >= head)
+
         {
+
             queue1[temp1] = temp;
+
             temp1++;
         }
+
         else
+
         {
 
             queue2[temp2] = temp;
@@ -96,8 +117,8 @@ if(j!=n+1)
         else
         printf("%d\n",queue[j]);
     }
-
-    printf("Total seek time is %d\n", seek);
+seek-=queue[j-1];
+    printf("Total Distance = %d\n", seek);
 
     return 0;
 }
