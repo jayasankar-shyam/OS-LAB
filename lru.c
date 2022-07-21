@@ -12,13 +12,15 @@ for(i=0;i<=total_pages-1;i++)
 scanf("%d",&pages[i]);
 printf("\nEnter the number of frames : ");
 scanf("%d",&total_frames);
+ printf("\nReference String\t");
     for(m = 0; m < total_frames; m++){
             frames[m] = -1;
+            printf("f%d\t",m+1);
     }
-   
+  printf("\n");
     for(n = 0; n < total_pages; n++)
     {
-        printf("%d: ", pages[n]);
+        printf("%d\t\t\t", pages[n]);
             a = 0, b = 0;
             for(m = 0; m < total_frames; m++)
             {
